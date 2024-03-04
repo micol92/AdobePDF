@@ -1,0 +1,11 @@
+{
+    "destinations": [
+		
+		{
+		  "name": "adobeforms_dest",
+		  "url": "https://adsrestapi-formsprocessing.cfapps.jp10.hana.ondemand.com/",
+		  "forwardAuthToken": true,
+		  "strictSSL": false
+		}
+	  ]
+}      

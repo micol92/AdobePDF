@@ -1,0 +1,31 @@
+
+
+<mvc:View controllerName="adobe01.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" displayBlock="true"
+    xmlns="sap.m" >
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <VBox id="buttonarea">
+        <HBox id="hboxbutton1"><Button id="button1" press="pressRender" text="Display Document" /></HBox>
+        <HBox id="hboxbutton2"><Button id="button2" press="pressRenderSign" text="RenderAndSignature" /></HBox>
+        
+        </VBox>
+
+          <VBox id="vbox">
+             <ScrollContainer id="scrollcontainer"
+             height="100%"
+             width="100%"
+             horizontal="true"
+             vertical="true">
+             <FlexBox id="flexbox" direction="Column" renderType="Div" class="sapUiSmallMargin">
+               <PDFViewer id="pdfview" source="{/Source}" title="{/Title}" height="{/Height}">
+                 <layoutData>
+                   <FlexItemData growFactor="1"  id="flexitemdata" />
+                 </layoutData>
+               </PDFViewer>
+             </FlexBox>
+           </ScrollContainer>
+          </VBox>
+        </content>
+    </Page>
+</mvc:View>
